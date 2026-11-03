@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c06d7fcdb69d93c4383553c3f5169411
+timeCreated: 1473239348
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 71108
+  packageName: SF_Spaceship Cockpit C2
+  packageVersion: 1.0
+  assetPath: Assets/SF_Cockpit-C2/Meshes/Materials/Spaceship_HUDs-A.mat
+  uploadId: 136058
