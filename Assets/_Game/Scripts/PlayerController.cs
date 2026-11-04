@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(playerControls.Player.Move.ReadValue<float>() * moveSpeed * Time.deltaTime, 0, 0);
-        transform.eulerAngles = new Vector3(0, 0, playerControls.Player.Move.ReadValue<float>() * -15);
+        float targetTilt = playerControls.Player.Move.ReadValue<float>() * -moveSpeed;
+        float currentTilt = Mathf.LerpAngle(transform.eulerAngles.z, targetTilt, Time.deltaTime * 5.0f);
+        transform.eulerAngles = new Vector3(0, 0, currentTilt);
     }
 }
